@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts"
 import { Eye, MousePointer, ShoppingCart, DollarSign, ArrowRight, Loader2, AlertCircle } from "lucide-react"
-import DateRangePicker from "../common/DateRangePicker"
+import Datepicker from "react-tailwindcss-datepicker"
 import analyticsApi from "../../services/analyticsApi"
 
 const DashboardPage = ({ onViewCampaign }) => {
   const [dateRange, setDateRange] = useState({
-    startDate: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), // Last 30 days
-    endDate: new Date(),
+    startDate: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // Last 30 days
+    endDate: new Date().toISOString().split('T')[0],
   })
   const [analyticsData, setAnalyticsData] = useState(null)
   const [loading, setLoading] = useState(true)
@@ -22,7 +22,9 @@ const DashboardPage = ({ onViewCampaign }) => {
     setLoading(true)
     setError(null)
     try {
-      const data = await analyticsApi.getOverviewAnalytics(dateRange.startDate, dateRange.endDate)
+      const startDate = new Date(dateRange.startDate)
+      const endDate = new Date(dateRange.endDate)
+      const data = await analyticsApi.getOverviewAnalytics(startDate, endDate)
       setAnalyticsData(data)
     } catch (err) {
       console.error('Failed to fetch analytics:', err)
@@ -144,14 +146,18 @@ const DashboardPage = ({ onViewCampaign }) => {
           <h2 className="text-2xl font-bold text-gray-900">Analytics Dashboard</h2>
           <p className="text-gray-600">Track your recommendation performance and revenue</p>
         </div>
+        <div className="w-80">
+          {/* Date Range Picker using react-tailwindcss-datepicker */}
+          <Datepicker
+            value={dateRange}
+            onChange={handleDateRangeChange}
+            showShortcuts={true}
+            primaryColor={"green"}
+            displayFormat={"YYYY-MM-DD"}
+            placeholder={"Select date range"}
+          />
+        </div>
       </div>
-
-      {/* Date Range Picker */}
-      <DateRangePicker
-        startDate={dateRange.startDate}
-        endDate={dateRange.endDate}
-        onChange={handleDateRangeChange}
-      />
 
       {/* Overview Cards */}
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

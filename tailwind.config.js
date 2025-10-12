@@ -61,6 +61,7 @@ module.exports = {
     "./admin/**/*.php",
     "./includes/**/*.php",
     "*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
   ],
   theme: {
     ...defaultConfig.theme,
@@ -90,5 +91,5 @@ module.exports = {
       },
     },
   },
-  plugins: [...defaultConfig.plugins],
+  plugins: [...defaultConfig.plugins, require("@tailwindcss/forms")],
 }
