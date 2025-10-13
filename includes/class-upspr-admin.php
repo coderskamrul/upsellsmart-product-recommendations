@@ -49,11 +49,11 @@ class UPSPR_Admin {
             return;
         }
 
-        // Enqueue the built admin script
+     // Enqueue the built admin script
         wp_enqueue_script(
             'upspr-admin',
             UPSPR_PLUGIN_URL . 'assets/dist/js/admin.js',
-            array( 'wp-api-fetch' ),
+            array( 'wp-api-fetch', 'react', 'react-dom' ),
             UPSPR_VERSION,
             true
         );

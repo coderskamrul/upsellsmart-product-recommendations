@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 const BasicInfoStep = ({ formData, updateFormData }) => {
   return (

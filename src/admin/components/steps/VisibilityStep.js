@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import ProductSelector from '../ProductSelector'
 import CategorySelector from '../CategorySelector'

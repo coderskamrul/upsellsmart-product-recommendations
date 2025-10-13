@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import { createContext, useContext } from "react"
 import { clsx } from "clsx"

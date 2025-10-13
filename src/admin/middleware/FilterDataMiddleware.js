@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 /**
  * FilterDataMiddleware - Handles ID to name mapping for filter components

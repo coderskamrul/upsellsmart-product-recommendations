@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import { useState, useRef, useEffect } from 'react'
 

@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import CountrySelector from '../CountrySelector'
 import StateSelector from '../StateSelector'

@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import { useState } from 'react'
 import filterDataMiddleware from '../middleware/FilterDataMiddleware'

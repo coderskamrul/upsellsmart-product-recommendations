@@ -1,4 +1,4 @@
-"use client"
+//React Component
 
 import KeywordSelector from '../KeywordSelector'
 
