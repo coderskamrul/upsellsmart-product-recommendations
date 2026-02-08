@@ -1,0 +1,67 @@
+# Directories
+.git
+.github
+.wordpress-org
+node_modules
+src
+scripts
+styles
+.webpack-cache
+
+# Build/Development files
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc
+.eslintrc.js
+.eslintrc.json
+.gitattributes
+.gitignore
+.nvmrc
+.prettierrc
+.prettierrc.js
+.stylelintrc
+.stylelintrc.js
+
+# Configuration files
+babel.config.js
+gulpfile.js
+package.json
+package-lock.json
+pnpm-lock.yaml
+postcss.config.js
+postcss.config.mjs
+tailwind.config.js
+webpack.config.js
+webpack.dev.config.js
+composer.json
+composer.lock
+phpcs.xml
+phpcs.xml.dist
+phpunit.xml
+phpunit.xml.dist
+tsconfig.json
+jsconfig.json
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+*.log
+*.map
+
+# Testing
+tests
+cypress
+cypress.json
+jest.config.js
+__tests__
+
+# Documentation (optional - remove if you want docs in the release)
+docs
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Other
+*.zip
+*.tar.gz
+Makefile

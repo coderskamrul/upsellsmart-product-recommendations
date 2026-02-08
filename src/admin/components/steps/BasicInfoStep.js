@@ -36,11 +36,11 @@ const BasicInfoStep = ({ formData, updateFormData }) => {
             <option value="">Select type</option>
             <option value="cross-sell">Cross-sell</option>
             <option value="upsell">Upsell</option>
-            <option value="related-products">Related Products</option>
-            <option value="frequently-bought-together">Frequently Bought Together</option>
-            <option value="personalized-recommendations">Personalized Recommendations</option>
-            <option value="trending-products">Trending Products</option>
-            <option value="recently-viewed">Recently Viewed</option>
+            <option value="related-products">Related Products (Comming Soon)</option>
+            <option value="frequently-bought-together">Frequently Bought Together (Comming Soon)</option>
+            <option value="personalized-recommendations">Personalized Recommendations (Comming Soon)</option>
+            <option value="trending-products">Trending Products (Comming Soon)</option>
+            <option value="recently-viewed">Recently Viewed (Comming Soon)</option>
 
           </select>
         </div>
