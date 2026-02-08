@@ -191,7 +191,7 @@ class UPSPR_Location_Display {
         $rule_name = isset( $basic_info['ruleName'] ) ? $basic_info['ruleName'] : '';
 
         // Start widget output
-        echo '<div class="upspr-campaign-widget upspr-' . esc_attr( $campaign_type ) . '-widget" data-campaign-id="' . esc_attr( $campaign_data['id'] ) . '">';
+        echo '<div class="upspr-campaign-widget hmd-display upspr-' . esc_attr( $campaign_type ) . '-widget" data-campaign-id="' . esc_attr( $campaign_data['id'] ) . '">';
 
         if ( ! empty( $rule_name ) ) {
             echo '<h3 class="upspr-widget-title">' . esc_html( $rule_name ) . '</h3>';

@@ -13,7 +13,7 @@ const AmplifiersStep = ({ formData, updateFormData }) => {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="bg-white p-6 rounded-lg border border-gray-200">
       <div className="mb-6">
         <h3 className="text-lg font-semibold text-gray-900 mb-2">Recommendation Amplifiers</h3>
         <p className="text-gray-600">Boost certain products in recommendations based on various criteria</p>
