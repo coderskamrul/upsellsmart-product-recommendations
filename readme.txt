@@ -3,9 +3,9 @@
 Contributors: hasandev
 Tags: personalized products, product recommendations, upsell, cross-sell, frequently bought together
 Requires at least: 5.0    
-Tested up to: 6.9
+Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -84,6 +84,12 @@ No, the plugin is designed for performance. Recommendations are pre-calculated a
 
 == Changelog ==
 
+= 1.0.2 =
+* Improved compatibility with WordPress 6.7
+* Updated WooCommerce compatibility to 9.5
+* Enhanced React-based admin interface
+* Performance improvements
+
 = 1.0.0 =
 * Initial release
 * Content-based recommendation engine
@@ -95,6 +101,9 @@ No, the plugin is designed for performance. Recommendations are pre-calculated a
 * Performance optimization with caching
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Improved compatibility with WordPress 6.7 and WooCommerce 9.5.
 
 = 1.0.0 =
 Initial release of UpSellSmart – Product Recommendations plugin.

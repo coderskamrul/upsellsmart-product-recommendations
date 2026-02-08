@@ -2,15 +2,15 @@
 /**
  * Plugin Name: UpSellSmart – Product Recommendations
  * Description: Local, data-driven UpSellSmart – Product Recommendations with multiple engines and comprehensive admin controls.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: hmdkamrul
  * Author URI: https://profiles.wordpress.org/hasandev/
  * Text Domain: upsellsmart-product-recommendations
  * Domain Path: /languages
  * Requires at least: 5.0
- * Tested up to: 6.4
+ * Tested up to: 6.7
  * WC requires at least: 5.0
- * WC tested up to: 8.0
+ * WC tested up to: 9.5
  * License: GPLv3
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'UPSPR_VERSION', '1.0.1' );
+define( 'UPSPR_VERSION', '1.0.2' );
 define( 'UPSPR_PLUGIN_FILE', __FILE__ );
 define( 'UPSPR_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 define( 'UPSPR_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
